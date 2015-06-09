@@ -10,3 +10,10 @@ function getSelectedOptions(selectBox) {
 	}
 	return result;
 }
+
+//清除所有的项
+function clearSelectBox(selectBox){
+	for(var i=0,len=selectBox.options.length;i<len;i++){
+		selectBox.remove(i);
+	}
+}
